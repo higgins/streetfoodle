@@ -1,38 +1,23 @@
-.App {
-  text-align: center;
+.react-autosuggest__container {
+    width: 100%;
+}
+.react-autosuggest__input {
+    color: black;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    width: 100%;
+    border-radius: 4px;
+}
+.react-autosuggest__suggestions-list {
+    color: black;
+    position: fixed;
+    background: white;
+    padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.react-autosuggest__suggestion {
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ReactModal__Overlay--after-open {
+    background-color: rgba(51,65,85, 0.25) !important;
 }
