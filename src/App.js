@@ -187,6 +187,10 @@ function App() {
     if (!currentGuess.length) {
       return
     }
+    // FIXME:
+    // updateBoard()
+      // update state
+      // update localStorage state
     if (food.name === currentGuess) { // NOTE: correct guess
       setShowRegion()
       setShowDescription()
@@ -236,7 +240,7 @@ function App() {
             <span id="logo" className="mx-1">StreetFoodle</span>
           </div>
           <div>
-            <span onClick={openStatsModal}><i className="far fa-chart-bar mx-1"></i></span>
+            <span onClick={openStatsModal}><i className="fas fa-chart-simple mx-1"></i></span>
             <span onClick={openInfoModal}><i className="far fa-question-circle mx-1"></i></span>
           </div>
         </header>
@@ -275,7 +279,7 @@ function App() {
         <div className="text-white bg-slate-700">
           <div className="flex flex-row justify-between">
             <div className="text-xl font-bold">STATS</div>
-            <button onClick={closeInfoModal}><i class="fa-solid fa-xmark"></i></button>
+            <button onClick={closeStatsModal}><i class="fa-solid fa-xmark"></i></button>
           </div>
           { gameStats &&
             <>
