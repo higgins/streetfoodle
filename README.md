@@ -1,6 +1,6 @@
-# Street Foodle
+# Street Foodle 🌮
 
-Inspired by [Wordle]() and one of its derivatives
+Inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html) and one of its derivatives
 [Framed](https://framed.wtf/), Street Foodle is a daily guessing game
 to guess street food from around the world.
 
