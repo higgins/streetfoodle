@@ -334,7 +334,7 @@ function App() {
             <div className="text-xl font-bold">ABOUT</div>
             <button onClick={closeModal('info')}><i class="fa-solid fa-xmark"></i></button>
           </div>
-          <div className="font-medium leading-5 my-2"><em>Street Foodle</em> is an idea by mi suegra (mother-in-law) Maria Eugenia Navarro.</div>
+          <div className="font-medium leading-5 my-2"><em>Street Foodle</em> is an idea by mi suegra (mother-in-law) <a className="text-sky-400 font-bold" target="_blank" href="https://www.instagram.com/marunavarro58">Maria Eugenia Navarro.</a></div>
           <div className="font-medium leading-5 my-2"><strong>The rules:</strong> guess the name of a dish from around the world in less than 3 attempts. New dish every day.</div>
           <div className="font-medium leading-5 my-2">All dishes are sourced from Wikipedia's <a className="text-sky-400 font-bold" target="_blank" href="https://en.wikipedia.org/wiki/List_of_street_foods"><em>List of street foods</em> article.</a> You can add food suggestions <a className="text-sky-400 font-bold" target="_blank" href="https://github.com/higgins/streetfoodle">here</a></div>
           <div className="font-medium leading-5 my-2">If you like this, <a className="text-sky-400 font-bold" target="_blank" href="https://twitter.com/justinprojects">let me know</a> or add something creative to my art project: <a className="text-sky-400 font-bold" target="_blank" href="https://24HourHomepage.com">24HourHomepage</a>  🌮</div>

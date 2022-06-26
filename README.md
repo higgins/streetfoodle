@@ -1,7 +1,7 @@
 # Street Foodle 🌮
 
-Conceived by mi suegra María Eugenia Navarro and inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html) and one of its derivatives
-[Framed](https://framed.wtf/), Street Foodle is a daily guessing game to guess street food from around the world. 
+Conceived by mi suegra [Maria Eugenia Navarro](https://www.instagram.com/marunavarro58/) and inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html) and one of its derivatives
+[Framed](https://framed.wtf/), Street Foodle is a daily guessing game to guess street food from around the world.
 
 You can [play it here](https://encapsulate.me/streetfoodle)
 
