@@ -128,6 +128,7 @@ function App() {
   const [currentGuess, setCurrentGuess] = useState('');
   const [statsIsOpen, setStatsModal] = useState(false);
   const [infoIsOpen, setInfoModal] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
 
   const daysSinceLaunch = daysSinceEpoch() - LAUNCH_DATE;
   const currentGameIndex = daysSinceLaunch % FOOD_DATA.length;
@@ -163,6 +164,7 @@ function App() {
       }
     }
   }, [state]);
+
   if (!state.currentGame) {
     return null;
   }
@@ -232,8 +234,15 @@ function App() {
     }
     const clipBoard = `Street Foodle #${currentGameIndex + 1}\n${emoji}\n\nhttps://encapsulate.me/streetfoodle`;
     navigator.clipboard.writeText(clipBoard);
+    setShowCopied(true);
+    setTimeout(() => {
+      setShowCopied(false);
+    }, 5000);
   }
-  const buttonText = guessesRemaining > 0 ? "SUBMIT" : "SHARE";
+  let buttonText = "SUBMIT";
+  if (isWinner || isLoser) {
+    buttonText = showCopied ? "COPIED" : "SHARE";
+  }
   const previousGuessesDiv = previousGuesses.length ? previousGuesses.map((guess) => {
     return guess === todaysFood.name ? <div className="self-start">{`✅ ${guess}`}</div> : <div className="self-start">{`❌ ${guess}`}</div>;
   }) : null;
@@ -270,7 +279,7 @@ function App() {
           {
             (isWinner || isLoser) &&
             <div className="flex flex-row justify-center items-center my-2">
-              <button className="ml-2 p-2 bg-emerald-500 rounded-md hover:bg-emerald-600 text-white" onClick={onShareResults}>SHARE</button>
+              <button className="ml-2 p-2 bg-emerald-500 rounded-md hover:bg-emerald-600 text-white" onClick={onShareResults}>{buttonText}</button>
             </div>
           }
           { previousGuessesDiv }
