@@ -285,7 +285,7 @@ function App() {
           { previousGuessesDiv }
         </div>
         <div className="flex flex-col items-center">
-          <div className="absolute bottom-4">Made with <span>🌮</span> by <a className="text-sky-400 font-bold" target="_blank" href="https://twitter.com/justinprojects">Justin Higgins</a></div>
+          <div className="relative bottom-4 mt-5">Made with <span>🌮</span> by <a className="text-sky-400 font-bold" target="_blank" href="https://twitter.com/justinprojects">Justin Higgins</a></div>
         </div>
       </div>
       <Modal
